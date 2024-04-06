@@ -10,7 +10,7 @@ configure: requirements build
 	(cd build && cmake ../OpenImageIO -DCMAKE_INSTALL_PREFIX=/opt/oiio)
 
 requirements: /usr/bin/git /usr/bin/cmake /usr/bin/c++
-	sudo yum install zlib-devel OpenEXR-devel libpng-devel boost-devel libjpeg-devel libtiff-devel python-devel
+	yum install zlib-devel OpenEXR-devel libpng-devel boost-devel libjpeg-devel libtiff-devel python-devel
 
 test:
 	build/src/oiiotool/oiiotool
@@ -36,10 +36,10 @@ build:
 	mkdir build
 
 /usr/bin/git:
-	sudo yum install git
+	yum install git
 
 /usr/bin/cmake:
-	sudo yum install cmake
+	yum install cmake
 
 /usr/bin/c++:
-	sudo yum install gcc gcc-c++
+	yum install gcc gcc-c++
