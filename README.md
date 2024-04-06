@@ -1,18 +1,12 @@
 # build-oiio
 
-Build recipe for OpenImageIO 1.6.18 on a clean CentOS 7.
+Build recipe for OpenImageIO 1.6.18 in a CentOS 7 container.
 
-Handles installing dependencies.
+    docker buildx build -t oiio .
+    docker run -d -it --name oiio oiio bash
+    docker cp /root/oiio.tar.gz .
 
-To build,
+## Runtime requirements
 
-    make
+    yum install zlib OpenEXR libpng boost libjpeg libtiff python
 
-To test the build,
-
-    make test
-
-To build again from scratch,
-
-    make clean
-    make
