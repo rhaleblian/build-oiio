@@ -9,7 +9,7 @@ variables:
   vmImageName: 'ubuntu-latest'
   imageRepository: openimageio
   dockerFilePath: Dockerfile
-  dockerRegistryServiceConnection: yoyodyne
+  dockerRegistryServiceConnection: rayhaleblian.azurecr.io
   tag: latest
 
 stages:
