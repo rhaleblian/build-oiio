@@ -7,7 +7,7 @@ pool:
 variables:
   # imageName: 'pipelines-javascript-docker'
   vmImageName: 'ubuntu-latest'
-  imageRepository: openimageio
+  imageRepository: build-oiio
   dockerFilePath: Dockerfile
   dockerRegistryServiceConnection: rayhaleblian.azurecr.io
   tag: latest
