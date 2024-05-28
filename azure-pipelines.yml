@@ -9,7 +9,7 @@ variables:
   vmImageName: 'ubuntu-latest'
   imageRepository: build-oiio
   dockerFilePath: Dockerfile
-  dockerRegistryServiceConnection: rayhaleblian.azurecr.io
+  dockerRegistryServiceConnection: dockerhub/rhaleblian
   tag: latest
 
 stages:
