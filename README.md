@@ -1,6 +1,6 @@
 # build-oiio
 
-Build recipe for OpenImageIO 1.6.18 in a CentOS 7 container.
+Build recipe for OpenImageIO 2.3.7 in a Rocky Linux 9 container.
 
     docker buildx build -t oiio .
     docker run -d -it --name oiio oiio bash
